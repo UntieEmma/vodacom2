@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vodacom - Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff2222; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #bf0c0c;
+            position: relative;
+            
+            animation: slideInDown 1s ease-out;
+        }
+
+        @keyframes slideInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .logo-heading {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #d82626; 
+            padding: 10px 0;
+            text-align: center;
+            animation: slideInLeft 1s ease-out; 
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #fff; 
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #d84315; 
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            animation: zoomIn 1s ease-out; 
+        }
+
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        main .content {
+            border: 2px solid #ff5722;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        main p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000; 
+            margin-bottom: 30px;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: left;
+            animation: slideInRight 1s ease-out;
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #dd0404;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #bf0c0c;
+        }
+
+        footer {
+            background-color: #ff5722; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeIn 1s ease-out; 
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social a:hover {
+            color: #d84315; 
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo-container">
+            <img src="download (1).jpeg" alt="Vodacom Logo" class="logo">
+        </div>
+        <h1 class="logo-heading">VODACOM</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container content">
+        <p>Contact Us</p>
+        <p>Have a question or need assistance? We're here to help!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="text" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Vodacom. All rights reserved.</p>
+        <div class="social">
+            <a href="https://www.facebook.com/thembeka.mhlafu.9"><img src="facebook.png" width="30"></a>
+            <a href="thembekamhlafu@gmail.com"><img src="gmail.jpg" width="30"></a>
+            <a href="https://www.instagram.com/mhlafuthembeka?utm_source=qr&igsh=NGM5dXgyb3pvbG8x"><img src="instagram.png" width="30"></a>
+        </div>
+        <p>Contact: info@vodacom.com | Phone: +266 58009437</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vodacom</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ff2222; 
+            color: #fff; 
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #bf0c0c;
+            position: relative;
+            animation: slideInDown 1s ease-out; 
+        }
+
+        @keyframes slideInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .logo-heading {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #d82626; 
+            padding: 10px 0;
+            text-align: center;
+            animation: fadeIn 1s ease-out; 
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #d84315;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        main .content {
+            border: 2px solid #ff5722; 
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        main p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000; 
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            animation: slideInUp 1s ease-out; 
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo-container">
+            <img src="download (1).jpeg" alt="Vodacom Logo" class="logo">
+        </div>
+        <h1 class="logo-heading">VODACOM</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container content">
+        <p>Vodacom is a leading African communications company providing a wide range of services including mobile voice, messaging, data, financial, and converged services to over 100 million customers. Vodacom is majority-owned by Vodafone, one of the world's largest telecommunications companies.</p>
+        <p>Explore our range of products including smartphones, tablets, wearables, and accessories. Whether you're looking for the latest flagship device or a budget-friendly option, we've got you covered.</p>
+        <p>Discover our innovative services designed to keep you connected, entertained, and productive. From high-speed internet access to digital content and financial solutions, we strive to meet your needs and exceed your expectations.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Vodacom. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
